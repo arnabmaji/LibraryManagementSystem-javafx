@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<StackPane
+           fx:id="stackPane"
+           xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="io.github.arnabmaji19.controller.ReturnBookController"
+           stylesheets="@../styles/style.css">
+
+    <GridPane
+            alignment="CENTER" vgap="20" hgap="20">
+        <Label
+                text="Return Book"
+                GridPane.rowIndex="0"
+                GridPane.columnIndex="0"
+                GridPane.columnSpan="2"
+                GridPane.halignment="CENTER"/>
+        <Text
+                text="Enter Book ID:"
+                GridPane.rowIndex="1"
+                GridPane.columnIndex="0"/>
+        <JFXTextField
+                fx:id="bookIdTextField"
+                GridPane.rowIndex="1"
+                GridPane.columnIndex="1"/>
+        <Text
+                text="Enter Student ID:"
+                GridPane.rowIndex="2"
+                GridPane.columnIndex="0"/>
+        <JFXTextField
+                fx:id="studentIdTextField"
+                GridPane.rowIndex="2"
+                GridPane.columnIndex="1"/>
+        <JFXButton
+                text="Return"
+                GridPane.rowIndex="3"
+                GridPane.columnIndex="0"
+                GridPane.columnSpan="2"
+                GridPane.halignment="CENTER"
+                onAction="#onReturnBook"/>
+    </GridPane>
+
+</StackPane>

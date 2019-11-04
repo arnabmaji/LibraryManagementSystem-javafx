@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXButton?>
+<StackPane
+        fx:id="stackPane"
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="io.github.arnabmaji19.controller.AdminLogInController"
+        stylesheets="@../styles/style.css">
+    <GridPane
+            alignment="CENTER" hgap="10" vgap="30">
+
+        <Label
+                text="Admin Log In"
+                GridPane.rowIndex="0"
+                GridPane.columnIndex="0"
+                GridPane.columnSpan="2"
+                GridPane.halignment="CENTER"/>
+        <Text
+                text="E-mail:"
+                GridPane.rowIndex="1"
+                GridPane.columnIndex="0"/>
+        <JFXTextField
+                fx:id="adminEmailTextField"
+                GridPane.rowIndex="1"
+                GridPane.columnIndex="1"
+                prefWidth="250"/>
+        <Text
+                text="Password:"
+                GridPane.rowIndex="2"
+                GridPane.columnIndex="0"/>
+        <JFXPasswordField
+                fx:id="adminPasswordField"
+                GridPane.rowIndex="2"
+                GridPane.columnIndex="1"
+                prefWidth="250"/>
+        <JFXButton
+                text="Log In"
+                GridPane.rowIndex="3"
+                GridPane.columnIndex="0"
+                GridPane.columnSpan="2"
+                GridPane.halignment="CENTER"
+                onAction="#onAdminLogIn"/>
+
+    </GridPane>
+</StackPane>

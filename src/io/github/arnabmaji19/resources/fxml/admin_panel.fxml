@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.layout.VBox?>
+<?import com.jfoenix.controls.JFXButton?>
+<BorderPane stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.arnabmaji19.controller.AdminPanelController">
+    <top>
+        <Label contentDisplay="CENTER" text="Welcome Admin" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </BorderPane.margin></Label>
+    </top>
+    <center>
+        <VBox spacing="20" alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </BorderPane.margin>
+            <JFXButton
+                text="Add Librarian"
+                prefWidth="250"
+                onAction="#addLibrarian"/>
+            <JFXButton
+                    text="Delete Librarian"
+                    prefWidth="250"
+                    onAction="#deleteLibrarian"/>
+            <JFXButton
+                    text="View Librarian"
+                    prefWidth="250"
+                    onAction="#viewLibrarian"/>
+            <JFXButton
+                    text="Log Out"
+                    prefWidth="250"
+                    onAction="#logout"/>
+        </VBox>
+    </center>
+
+</BorderPane>

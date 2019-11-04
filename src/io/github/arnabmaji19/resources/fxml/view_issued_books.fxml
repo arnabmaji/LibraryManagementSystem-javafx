@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="io.github.arnabmaji19.controller.ViewIssuedBooksController"
+          alignment="CENTER" hgap="20" vgap="20">
+    <Label
+        text="Issued Books"
+        GridPane.rowIndex="0"
+        GridPane.columnIndex="0"
+        GridPane.halignment="CENTER">
+        <font>
+            <Font name="Consolas bold" size="18"/>
+        </font>
+    </Label>
+    <TableView
+        fx:id="issuedBooksTableView"
+        GridPane.rowIndex="1"
+        GridPane.columnIndex="0"/>
+
+</GridPane>

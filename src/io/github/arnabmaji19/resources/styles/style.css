@@ -1,0 +1,21 @@
+.root{
+    -fx-background-color: white;
+}
+.root Label{
+    -fx-font-size: 25;
+}
+.jfx-button {
+    -jfx-button-type: FLAT;
+    -fx-background-color: #43A047;
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+.root JFXTextField{
+    -fx-font-size: 15;
+}
+.root Text{
+    -fx-font-size: 15;
+}
+.root JFXPasswordField{
+    -fx-font-size: 15;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<VBox
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="io.github.arnabmaji19.controller.LibrarianPanelController"
+      stylesheets="@../styles/style.css"
+      spacing="20" alignment="CENTER">
+
+    <JFXButton
+            text="Add Book"
+            prefWidth="250"
+            onAction="#onAddBook"/>
+    <JFXButton
+            text="View Book"
+            prefWidth="250"
+            onAction="#onViewBook"/>
+    <JFXButton
+            text="Issue Book"
+            prefWidth="250"
+            onAction="#onIssueBook"/>
+    <JFXButton
+            text="View Issued Books"
+            prefWidth="250"
+            onAction="#onViewIssuedBooks"/>
+    <JFXButton
+            text="Return Book"
+            prefWidth="250"
+            onAction="#onReturnBook"/>
+    <JFXButton
+            text="Log Out"
+            prefWidth="250"
+            onAction="#onLogOut"/>
+
+
+</VBox>

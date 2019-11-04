@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Text?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXButton?>
+
+<?import javafx.scene.layout.StackPane?>
+<StackPane
+        fx:id="stackPane"
+        fx:controller="io.github.arnabmaji19.controller.AddLibrarianController"
+        xmlns:fx="http://javafx.com/fxml/1"
+        stylesheets="@../styles/style.css">
+    <GridPane
+            alignment="CENTER"
+            hgap="20" vgap="20">
+
+        <Label
+                text="Add Librarian"
+                GridPane.rowIndex="0"
+                GridPane.columnIndex="0"
+                GridPane.columnSpan="2"
+                GridPane.halignment="CENTER"/>
+        <Text
+                text="Name:"
+                GridPane.rowIndex="1"
+                GridPane.columnIndex="0"/>
+        <JFXTextField
+                fx:id="nameTextField"
+                GridPane.rowIndex="1"
+                GridPane.columnIndex="1"
+                prefWidth="250"/>
+        <Text
+                text="Email:"
+                GridPane.rowIndex="2"
+                GridPane.columnIndex="0"/>
+        <JFXTextField
+                fx:id="emailTextField"
+                GridPane.rowIndex="2"
+                GridPane.columnIndex="1"
+                prefWidth="250"/>
+        <Text
+                text="Password:"
+                GridPane.rowIndex="3"
+                GridPane.columnIndex="0"/>
+        <JFXPasswordField
+                fx:id="passwordTextField"
+                GridPane.rowIndex="3"
+                GridPane.columnIndex="1"
+                prefWidth="250"/>
+        <Text
+                text="Contact Number:"
+                GridPane.rowIndex="4"
+                GridPane.columnIndex="0"/>
+        <JFXTextField
+                fx:id="contactTextField"
+                GridPane.rowIndex="4"
+                GridPane.columnIndex="1"
+                prefWidth="250"/>
+        <JFXButton
+                text="Add Now"
+                GridPane.rowIndex="5"
+                GridPane.columnIndex="0"
+                GridPane.columnSpan="2"
+                GridPane.halignment="CENTER"
+                onAction="#onAddLibrarian"/>
+    </GridPane>
+</StackPane>
+

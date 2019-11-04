@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+
+<StackPane
+        fx:id="stackPane"
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="io.github.arnabmaji19.controller.DeleteLibrarianController"
+        stylesheets="@../styles/style.css">
+
+    <GridPane alignment="CENTER" vgap="15">
+
+        <Text
+                text="Enter Librarian's Email:"
+                textAlignment="CENTER"
+                GridPane.rowIndex="0"
+                GridPane.columnIndex="0"/>
+        <JFXTextField
+                fx:id="librarianEmail"
+                GridPane.rowIndex="1"
+                GridPane.columnIndex="0"
+                prefWidth="250"/>
+        <JFXButton
+                text="Delete"
+                GridPane.rowIndex="2"
+                GridPane.columnIndex="0"
+                onAction="#onDelete"/>
+
+    </GridPane>
+</StackPane>
+
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.skin.TableHeaderRow?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="io.github.arnabmaji19.controller.ViewLibrarianController"
+          alignment="TOP_CENTER">
+    <padding>
+        <Insets top="8" left="8" right="8" bottom="8"/>
+    </padding>
+    <Label
+        text="All Librarians"
+        GridPane.rowIndex="0"
+        GridPane.columnIndex="0"
+        textAlignment="CENTER"/>
+    <TableView
+        fx:id="librarianTable"
+        GridPane.rowIndex="1"
+        GridPane.columnIndex="0"
+        prefWidth="450"/>
+
+</GridPane>
