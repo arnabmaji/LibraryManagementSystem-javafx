@@ -54,9 +54,6 @@ public class AddLibrarianController implements Initializable {
         layout.setHeading(new Text("Status"));
         if(createNewLibrarian(name,email,password,contactNumber)){
             layout.setBody(new Text("Successfully created Librarian: " + name));
-            PauseTransition delay = new PauseTransition(Duration.seconds(3));
-            delay.setOnFinished(event1 -> switchSceneToAdminPanel((Stage) nameTextField.getScene().getWindow()));
-            delay.play();
         } else {
             layout.setBody(new Text("Failed to create Librarian"));
         }
@@ -82,16 +79,5 @@ public class AddLibrarianController implements Initializable {
             }
         }).start();
         return true;
-    }
-
-    private void switchSceneToAdminPanel(Stage stage){
-        try{
-            Parent root = FXMLLoader.load(getClass().getResource("/io/github/arnabmaji19/resources/fxml/admin_panel.fxml"));
-            stage.setTitle("Admin Panel");
-            stage.setScene(new Scene(root, WindowSize.Width, WindowSize.Height));
-            stage.show();
-        } catch (IOException e){
-            e.printStackTrace();
-        }
     }
 }
